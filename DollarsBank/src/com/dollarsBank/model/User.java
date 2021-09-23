@@ -114,6 +114,23 @@ public class User {
 			"}";
 	}
 
+	public User(String username, Long mbrId, String fname, String lname, String email, String password) {
+		super();
+		this.username = username;
+		this.mbrId = mbrId;
+		this.fname = fname;
+		this.lname = lname;
+		this.email = email;
+		this.password = password;
+	}
+
+	public User() {
+		super();
+		
+	}
+	
+	
+
 	
 	
 }
