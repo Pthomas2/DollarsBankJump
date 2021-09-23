@@ -1,5 +1,7 @@
 package com.dollarsBank.model;
 
+import java.util.ArrayList;
+
 public class Account {
 	
 	private Long acctId;
@@ -7,6 +9,8 @@ public class Account {
 	private Long mbrId;
 	
 	private double balance;
+	
+	private ArrayList<String> transactions;
 	
 	public Account(Long acctId, Long mbrId, double balance) {
 		super();
@@ -28,6 +32,7 @@ public class Account {
 		
 
 	}
+
 
 	public Long getAcctId() {
 		return acctId;
@@ -51,6 +56,18 @@ public class Account {
 
 	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+
+
+
+	public ArrayList<String> getTransactions() {
+		return transactions;
+	}
+
+
+
+	public void setTransactions(ArrayList<String> transactions) {
+		this.transactions = transactions;
 	}
 	
 	
